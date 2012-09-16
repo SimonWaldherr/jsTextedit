@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jsTextedit</title>
+    
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./jsTextedit.js"></script>
+</head>
+<body>
+  <div id="box">
+    <div class="textdivc jstext" id="textdivi">
+      Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.
+    </div>
+    <textarea class="textareac jstext" onclick="jsTextInfo('textareai');" id="textareai">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</textarea>
+    
+    <div id="buttons">
+      <a class="cssbutton" onclick="alert(getSelStart('textareai'));">int getSelStart</a>
+      <a class="cssbutton" onclick="alert(getSelEnd('textareai'));">int getSelEnd</a>
+      <a class="cssbutton" onclick="alert(getIdLength('textareai'));">int getIdLength</a>
+      <a class="cssbutton" onclick="alert(getSelText('textareai'));">str getSelText</a>
+      <a class="cssbutton" onclick="alert(getSelTextBefore('textareai'));">str getSelTextBefore</a>
+      <a class="cssbutton" onclick="alert(getSelTextAfter('textareai'));">str getSelTextAfter</a>
+      <br>
+      <div class="jsTinfo">clicked word = <b id="clickedword">undefinied</b></div>
+      <div class="jsTinfo">get Sel Start = <b id="getselstart">undefinied</b></div>
+      <div class="jsTinfo">get Sel End = <b id="getselend">undefinied</b></div>
+      <div class="jsTinfo">get Id Length = <b id="getidlength">undefinied</b></div>
+      <div class="jsTinfo">get Sel Text = <b id="getseltext">undefinied</b></div>
+    </div>
+  </div>
+</body>
+</html>
