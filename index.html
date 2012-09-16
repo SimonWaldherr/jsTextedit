@@ -9,10 +9,8 @@
 </head>
 <body>
   <div id="box">
-    <div class="textdivc jstext" id="textdivi">
-      Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.
-    </div>
-    <textarea class="textareac jstext" onclick="jsTextInfo('textareai');" id="textareai">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</textarea>
+    <div class="textdivc jstext" id="textdivi">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+    <textarea class="textareac jstext" onclick="jsTextInfo('textareai');" onchange="jsTextChange('textareai', 'textdivi');" onkeyup="jsTextChange('textareai', 'textdivi');" id="textareai">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</textarea>
     
     <div id="buttons">
       <a class="cssbutton" onclick="alert(getSelStart('textareai'));">int getSelStart</a>
@@ -22,11 +20,11 @@
       <a class="cssbutton" onclick="alert(getSelTextBefore('textareai'));">str getSelTextBefore</a>
       <a class="cssbutton" onclick="alert(getSelTextAfter('textareai'));">str getSelTextAfter</a>
       <br>
-      <div class="jsTinfo">clicked word = <b id="clickedword">undefinied</b></div>
+      <div class="jsTinfo">clicked word  = <b id="clickedword">undefinied</b></div>
       <div class="jsTinfo">get Sel Start = <b id="getselstart">undefinied</b></div>
-      <div class="jsTinfo">get Sel End = <b id="getselend">undefinied</b></div>
+      <div class="jsTinfo">get Sel End   = <b id="getselend">undefinied</b></div>
       <div class="jsTinfo">get Id Length = <b id="getidlength">undefinied</b></div>
-      <div class="jsTinfo">get Sel Text = <b id="getseltext">undefinied</b></div>
+      <div class="jsTinfo">get Sel Text  = <b id="getseltext">undefinied</b></div>
     </div>
   </div>
 </body>

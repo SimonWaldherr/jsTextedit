@@ -5,6 +5,12 @@ function jsTextInfo(id)
     document.getElementById('getselend').innerHTML = getSelEnd(id);
     document.getElementById('getidlength').innerHTML = getIdLength(id);
     document.getElementById('getseltext').innerHTML = getSelText(id);
+    jsTextChange('textareai', 'textdivi');
+  }
+
+function jsTextChange(idfrom, idto)
+  {
+    document.getElementById(idto).innerHTML = document.getElementById(idfrom).value;
   }
 
 function getSelText()
@@ -62,7 +68,7 @@ function getSelTextAfter(id)
 function getSelWord(id)
   {
     var input = document.getElementById(id);
-    var text  = input.value;
+    var text  = input.value+'.';
     var start = input.selectionStart;
     var wordstart = 0, wordend = 0;
     //charAt
