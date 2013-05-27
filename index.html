@@ -27,5 +27,17 @@
       <div class="jsTinfo">get Sel Text  = <b id="getseltext">undefinied</b></div>
     </div>
   </div>
+  <script>
+    
+    function jsTextInfo(id) {
+      'use strict';
+      document.getElementById('clickedword').innerHTML = getSelWord(id);
+      document.getElementById('getselstart').innerHTML = getSelStart(id);
+      document.getElementById('getselend').innerHTML = getSelEnd(id);
+      document.getElementById('getidlength').innerHTML = getIdLength(id);
+      document.getElementById('getseltext').innerHTML = getSelText(id);
+      jsTextChange('textareai', 'textdivi');
+    }
+  </script>
 </body>
 </html>
