@@ -18,7 +18,6 @@ function getSelText() {
   } else {
     return;
   }
-
   return txt;
 }
 
@@ -61,7 +60,6 @@ function getSelWord(id) {
   start = input.selectionStart;
   wordstart = 0;
   wordend = 0;
-  //charAt
   for (i = start; i > 0; i--) {
     if (((text.charCodeAt(i) > 0x1f) && (text.charCodeAt(i) < 0x30)) || ((text.charCodeAt(i) > 0x39) && (text.charCodeAt(i) < 0x41))) {
       wordstart = i;
@@ -75,6 +73,4 @@ function getSelWord(id) {
     }
   }
   return text.substring(wordstart, wordend);
-  //document.getElementById('clickedword').innerHTML = text.substring(wordstart, wordend);
-  //return 'start: '+wordstart+'; wordend: '+wordend+'; '+"\n\n\n"+text.substring(wordstart, wordend);
 }
